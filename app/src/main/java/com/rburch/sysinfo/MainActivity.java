@@ -42,6 +42,9 @@ public class MainActivity extends AppCompatActivity {
                 }
                 catch(NoSuchMethodError nom) {
                     mySerialNumber = "Not Available";
+                }
+                catch(SecurityException sec) {
+                    mySerialNumber = "Not Available";
                 };
 
                 String fullSysInfo = "Bootloader: " + myBootloaderVersion + "\n" + "Device Name: "
